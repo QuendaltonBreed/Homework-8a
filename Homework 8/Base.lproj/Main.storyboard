@@ -213,7 +213,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="SQF-q3-ExR" userLabel="Tap (1, 1)">
                     <connections>
-                        <action selector="Tap:" destination="BYZ-38-t0r" id="Ead-gZ-ab9"/>
+                        <action selector="Tap11:" destination="BYZ-38-t0r" id="Gcy-PC-43X"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="Vt6-73-IbQ" userLabel="Tap (1, 2)">

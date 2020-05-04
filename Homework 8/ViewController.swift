@@ -10,15 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // Player variable which switches
     var player = 1
-    
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    // decalare Image11 as a UIImageView variable
     
+    // decalare Image11 as a UIImageView variable
     @IBOutlet weak var Image11: UIImageView!
     
     @IBOutlet weak var Image12: UIImageView!
@@ -44,6 +40,9 @@ class ViewController: UIViewController {
     
     let nought = UIImage(named: "Nought")
     let cross = UIImage(named: "Cross")
+    
+    // Reset image for the next game
+    let reset = UIImage(named: "reset")
     
     // On tapping this, Tap (1, 1) is triggered
     // and updates the UIImageView with the
@@ -194,6 +193,27 @@ class ViewController: UIViewController {
             player = 1
         }
   
+    }
+    
+    
+    @IBAction func swipeReset(_ sender: Any) {
+        Image11.image = reset
+        Image12.image = reset
+        Image13.image = reset
+        Image21.image = reset
+        Image22.image = reset
+        Image23.image = reset
+        Image31.image = reset
+        Image32.image = reset
+        Image33.image = reset
+    }
+    
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
     }
     
 }

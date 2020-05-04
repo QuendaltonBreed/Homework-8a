@@ -195,7 +195,7 @@ class ViewController: UIViewController {
   
     }
     
-    
+    // Reset swipe which will replace the image in the imageViews to the reset image.
     @IBAction func swipeReset(_ sender: Any) {
         Image11.image = reset
         Image12.image = reset
